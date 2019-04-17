@@ -1,0 +1,40 @@
+{
+  "name": "protractor-ts",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "protractor conf.js --baseUrl=\"https://dev-sl-1.dev.mimecast.lan:14502/u/login/?gta=administration#/login\" --suite",
+    "qa": "protractor conf.js --baseUrl=\"https://login-qan.mimecast.com/u/login/?gta=administration#/login\" --suite",
+    "stg": "protractor conf.js --baseUrl=\"https://login-stg.mimecast.com/u/login/#/login?gta=administration\" --suite",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver:start": "webdriver-manager start",
+    "webdriver:update": "webdriver-manager update --ie",
+    "suites": "protractor conf.js --suite",
+    "iesuites": "protractor conf-ie.js --suite",
+    "ie": "concurrently \"npm run webdriver:update\" \"npm run webdriver:start\" \"npm run iesuites IELOGIN\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {},
+  "dependencies": {
+    "@types/jasmine": "2.5.45",
+    "base-64": "^0.1.0",
+    "chalk": "^2.4.1",
+    "concurrently": "^4.0.1",
+    "jasmine": "^2.4.1",
+    "jasmine-reporters": "^2.2.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "moment": "^2.22.2",
+    "protractor": "^5.4.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.7.0",
+    "typescript": "^3.4.3",
+    "webdriver-manager": "^13.0.0"
+  },
+  "devDependencies": {
+    "protractor-console": "^3.0.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "JSFiles",
+    "suppressImplicitAnyIndexErrors": true,
+    "types": ["jasmine", "node"]
+  },
+  "exclude": ["typings/browser.d.ts", "typings/browser", "TResults", "node_modules", "tslint.json"]
+}

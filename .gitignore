@@ -1,0 +1,7 @@
+.idea
+.settings
+node_modules/
+downloads/
+TResults/
+
+/target
